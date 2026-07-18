@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  gap: 50px;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  /* align-items: center; */
+}
+
+nav a {
+  flex: 1 1 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: black;
+  /* background-color: white; */
+
+  text-shadow:
+    0 0 5px white,
+    /* Small, sharp core color */ 0 0 10px white,
+    /* Medium spread */ 0 0 20px white,
+    /* Large spread */ 0 0 40px white,
+    /* Very wide ambient glow */ 0 0 80px white; /* Deepest ambient glow */
+}
+
+header img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.hero {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+}
+
+.hero img {
+  object-fit: cover;
+  /* justify-self: right; */
+  width: 100%;
+}
+
+.hero div {
+  /* align-self: center; */
+  /* text-align: center; */
+  background-color: #c1cee0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero div h1 {
+  justify-self: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  justify-self: center;
+  display: block;
+}
+
+.hero div p {
+  font-size: large;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.part h1 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.product {
+  margin-top: 20px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product div img {
+  width: 200px;
+  height: 200px;
+}
+
+.product div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+
+.product button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 50%;
+  background-color: white;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  font-size: 1em;
+}
+
+.product p {
+  text-transform: uppercase;
+}
+
+.product h1 {
+  text-transform: capitalize;
+}
+
+.partner {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  /* margin-top: 30px; */
+}
+
+.players {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.partner aside {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.players img {
+  width: 300px;
+  height: 350px;
+}
+
+.players div {
+  flex: 1 1 0;
+  /* border: 2px solid black; */
+  padding: 20px;
+}
+
+.partner aside a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  /* background-color: blue; */
+  height: 30px;
+  width: 200px;
+  display: block;
+  line-height: 30px;
+  color: black;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 2%;
+}
+
+.partner aside a:hover {
+  color: white;
+
+  text-shadow:
+    0 0 5px black,
+    /* Small, sharp core color */ 0 0 10px black,
+    /* Medium spread */ 0 0 20px black,
+    /* Large spread */ 0 0 40px black,
+    /* Very wide ambient glow */ 0 0 80px black;
+}
+
+aside img {
+  height: 300px;
+  width: 250px;
+}
+
+aside p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.title {
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery img {
+  height: 400px;
+  width: 400px;
+}
+
+.gallery h1 {
+  grid-column: 1 / -1;
+  background-color: grey;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.end {
+  display: flex;
+  /* background-color: grey; */
+}
+
+.end h1 {
+  text-transform: uppercase;
+}
+
+.links,
+.help,
+.contact {
+  flex: 1 1 0;
+  padding: 20px;
+}
+
+footer {
+  background-color: grey;
+}
